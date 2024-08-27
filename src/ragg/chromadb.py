@@ -1,6 +1,11 @@
 from langchain_community.vectorstores import Chroma
 
-from src.rag.embedding import get_embedding_function
+from langchain_aws import BedrockEmbeddings
+
+
+def get_embedding_function():
+    embeddings = BedrockEmbeddings()
+    return embeddings
 
 CHROMA_PATH = "data/chroma"
 CHROMA_DB_INSTANCE = None  # Reference to singleton instance of ChromaDB

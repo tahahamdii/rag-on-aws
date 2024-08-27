@@ -3,7 +3,7 @@ from typing import List
 from langchain.prompts import ChatPromptTemplate
 from langchain_aws import ChatBedrock
 
-from src.rag.chromadb import get_chroma_db
+from src.ragg.chromadb import get_chroma_db
 
 PROMPT_TEMPLATE = """
 Answer the question based only on the following context:
@@ -48,4 +48,4 @@ def query_rag(query_text: str) -> QueryResponse:
 
 
 if __name__ == "__main__":
-    query_rag("How much are?")
+    query_rag("what is Ultrasound-stimulated microbubbles (USMB)?")
