@@ -2,8 +2,8 @@ from dataclasses import dataclass
 from typing import List
 from langchain.prompts import ChatPromptTemplate
 from langchain_aws import ChatBedrock
+from ragg.chromadb import get_chroma_db
 
-from src.ragg.chromadb import get_chroma_db
 
 PROMPT_TEMPLATE = """
 Answer the question based only on the following context:

@@ -6,7 +6,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain.schema.document import Document
 from langchain_community.vectorstores.chroma import Chroma
 
-from src.rag.embedding import get_embedding_function
+from src.ragg.embedding import get_embedding_function
 
 CHROMA_PATH = "src/data/chroma"
 DATA_SOURCE_PATH = "src/data/source"
